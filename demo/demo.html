@@ -1,0 +1,41 @@
+<head>
+	<title>ProgressiveFileHasher Demo</title>
+</head>
+<body>
+	<h1>ProgressiveFileHasher Demo</h1>
+
+	{{> ProgressiveFileHasherDemo}}
+</body>
+
+<template name="ProgressiveFileHasherDemo">
+	Select File to Hash: <input type=file id="picker">
+	<div>
+	{{#if haveFile}}
+		{{> SingleFile file}}
+	{{/if}}
+	</div>
+</template>
+
+<template name="SingleFile">
+	<table border=1>
+		<tr>
+			<th colspan="2">{{name}}</th>
+		</tr>
+		<tr>
+			<th>Type</th>
+			<th>Hash</th>
+		</tr>
+		<tr>
+			<td>MD5</td>
+			<td id="hash-md5">-</td>
+		</tr>
+		<tr>
+			<td>SHA1</td>
+			<td id="hash-sha1">-</td>
+		</tr>
+		<tr>
+			<td>SHA256</td>
+			<td id="hash-sha256">-</td>
+		</tr>
+	</table>
+</template>
