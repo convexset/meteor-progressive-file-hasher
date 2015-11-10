@@ -2,6 +2,19 @@
 
 A Meteor package that provides a client-side file hasher that hashes progressively to reduce impact on the UI. Generates MD5, SHA1 and SHA256 hashes.
 
+## Table of Contents
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Install](#install)
+- [Usage](#usage)
+    - [Basic Use](#basic-use)
+    - [Via Promises](#via-promises)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Install
 
 This is available as [`convexset:progressive-file-hasher`](https://atmospherejs.com/convexset/progressive-file-hasher) on [Atmosphere](https://atmospherejs.com/). (Install with `meteor add convexset:progressive-file-hasher`.)
