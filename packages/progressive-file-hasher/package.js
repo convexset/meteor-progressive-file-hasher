@@ -11,7 +11,7 @@ Package.onUse(function(api) {
 	api.use([
 		'ecmascript',
 		'underscore',
-		'convexset:package-utils@0.1.8',
+		'convexset:package-utils@0.1.9',
 		'jparker:crypto-core@0.1.0',
 		'jparker:crypto-md5@0.1.1',
 		'jparker:crypto-sha1@0.1.0',
