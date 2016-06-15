@@ -1,7 +1,12 @@
 /* global File: true */
-/* global PackageUtilities: true */
 /* global ProgressiveFileHasher: true */
 /* global CryptoJS: true */
+
+import { checkNpmVersions } from 'meteor/tmeasday:check-npm-versions';
+checkNpmVersions({
+  'package-utils': '^0.2.1'
+});
+const PackageUtilities = require('package-utils');
 
 ProgressiveFileHasher = (function(undefined) {
 	'use strict';
